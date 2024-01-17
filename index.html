@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iaromir</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
+                
+        <link rel="icon" type="image/png" href="assets/favicon_io/favicon-16x16.png">
+        <link rel="icon" type="image/png" href="assets/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" href="assets/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="assets/favicon_io/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" href="assets/favicon_io/android-chrome-512x512.png">
+
+        <script
+          src="https://kit.fontawesome.com/e7c741f98a.js"
+          crossorigin="anonymous"
+        ></script>
+        
+    </head>
+    <body>
+        <div class="body-wrapper">
+            <header>
+                <div id="cv">
+                    <a id="cv-download" href="assets/Iaromir_Mikhailov.pdf" download>Download CV</a>
+                </div>
+                <nav>
+                    <!-- add class open -->
+                    <ul>
+                        <li class="nav-link"><a href="#education">Education</a></li>
+                        <li class="nav-link"><a href="#skills">Skills</a></li>
+                        <li class="nav-link"><a href="#contacts">Contacts</a></li>          
+                    </ul>
+                    <!-- burger-menu -->
+                    <div id="open-menu-burger">
+                        <ol id="open-menu-burger-links">
+                            <li><a href="#education" class="burger-menu-link">Education</a></li>
+                            <li><a href="#skill" class="burger-menu-link">Skills</a></li>
+                            <li><a href="#contacts" class="burger-menu-link">Contacts</a></li>
+                        </ol>  
+                    </div>
+                    <button id="menu-burger-button">
+                        <span class="burger-lines"></span>
+                        <span class="burger-lines"></span>
+                        <span class="burger-lines"></span>
+                    </button>
+                </nav>
+            </header>
+            <main>
+                <section id="about">
+                    <div id="photo"></div>
+                    <div id="info">
+                        <h1>Iaromir Mikhailov</h1>
+                        <h2>Java Developer</h2>
+                        <p>Data of birth: 2005</p>
+                        <p>Location: Montevideo, Uruguay</p>
+                    </div>
+                </section>
+                <section id="education">
+                    <h2 class="title">Education</h2>
+                    <div class="section-content section-education">
+                        <div id="education-text">
+                            <ol>
+                                <li class="section-education-element"><span>2023-2026</span> Student of <span>Technological Institute of Informatics </span> (Montevideo, Uruguay). Bachelor's Degree in Computer Science.</li>
+                                <li class="section-education-element"><span>2023</span> Program of additional education on the basics of IT and programming <span>Samsung IT School</span>. Municipal autonomous formation institution Lyceum 97 of Chelyabinsk.</li>
+                            </ol>
+                        </div>
+                        <div id="carousel">
+                            <button class="prev" id="leftCarret" onclick="plusSlides(-1)"></button>
+                            <div id="slider">
+                                <div id="counter">1/2</div>
+                                <div id="slider-wrapper">
+                                    <!-- swipe -->
+                                    <div id="slider-img1" class="slider-img"></div>
+                                    <div id="slider-img2" class="slider-img"></div>
+                                </div>
+                            </div>
+                            <button class="next" id="rightCarret" onclick="plusSlides(1)"></button>
+                        </div>
+                    </div>
+                </section>
+                <section id="skills">
+                    <h2 class="title">Skills</h2>
+                    <div class="section-content section-skills">
+                        <div>
+                            <ol>
+                                <li class="section-skills-element">Java</li>
+                                <li class="section-skills-element">Android application development</li>
+                            </ol>
+                        </div>
+                        <div>
+                            <ol>
+                                <li class="section-skills-element">English B2</li>
+                                <li class="section-skills-element">Spanish A1</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <section id="contacts">
+                    <h2 class="contacts">Contacts</h2>
+                    <ol class="contact-block">
+                        <li class="contact-block-link">
+                            <a href="https://www.linkedin.com/in/yaromir-mikhailov-3b0424295/" target="_blank">
+                                <i class="fa-brands fa-linkedin fa-lg" style="color: #b9b7b4;"></i>
+                            </a>
+                        </li>
+                        <li class="contact-block-link">
+                            <a href="https://t.me/Qqqqqqqqqwea" target="_blank">
+                                <i class="fa-brands fa-telegram fa-lg" style="color: #b9b7b4;"></i>
+                            </a>
+                        </li>
+                        <li class="contact-block-link">
+                            <a id="mail" href="mailto:yarqq005@gmail.com" target="_blank">
+                                <i class="fa-solid fa-square-envelope fa-lg" style="color: #b9b7b4;"></i>
+                            </a>
+                        </li>
+                        <li class="contact-block-link">
+                            <a href="https://github.com/jyltawiw" target="_blank">
+                                <i class="fa-brands fa-github fa-lg" style="color: #b9b7b4;"></i>
+                            </a>
+                        </li>
+                    </ol>
+                </section>
+            </footer>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
